@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --primary-color: #0e1f3a;
+    --secondary-color: #4a9f6f92;
+    --text-color: #fafafa;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --progress-degree:#4a9f6f;
+    --progress-degree-hover: #153124;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container{
+    margin: auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    max-width: 600px;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: start;
+}
+
+
+.user-input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#user-input{
+    flex: 1;
+    width: 70% ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-btn{
+    padding: 10px 20px;
+    background-color: #4a9f6f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#search-btn:hover{
+    background-color: #153124b2;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  /* Removed background-color */
+  background: conic-gradient(#4a9f6f var(--progress-degree, 0deg), #153124 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.circle span {
+  position: relative;
+  z-index: 2;
+  user-select: none;
+}
+
+.circle p {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #eee;
+  user-select: none;
+}
+
+.progress{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2px 0 ;
+  gap: 2px;
+  flex-wrap: wrap;
+}
