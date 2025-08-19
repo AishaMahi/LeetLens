@@ -1,4 +1,4 @@
-LeetMetric is a web application that visualizes your LeetCode problem-solving progress using interactive pie charts and displays submission statistics by difficulty levels (Easy, Medium, Hard). It fetches data from the LeetCode GraphQL API via a custom CORS proxy server.
+LeetLens is a web application that visualizes your LeetCode problem-solving progress using interactive pie charts and displays submission statistics by difficulty levels (Easy, Medium, Hard). It fetches data from the LeetCode GraphQL API via a custom CORS proxy server.
 
 --Features--
 * Fetches and displays number of problems solved by difficulty, visualized as pie charts.
